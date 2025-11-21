@@ -12,24 +12,6 @@
 
 #include "ft_printf.h"
 
-// static char	*new_str(unsigned long value, int *strlen)
-// {
-// 	int				a;
-// 	unsigned long	temp;
-// 	char			*str;
-
-// 	a = 0;
-// 	temp = value;
-// 	while (temp != 0)
-// 	{
-// 		temp = temp / 16;
-// 		a++;
-// 	}
-// 	str = calloc(a + 1, sizeof(char));
-// 	*strlen = a - 1;
-// 	return (str);
-// }
-
 int	ft_print_pointer(unsigned long value)
 {
 	char	str[17];
@@ -37,7 +19,7 @@ int	ft_print_pointer(unsigned long value)
 	int		len;
 
 	if (value == 0)
-		return (write(1, "0x0", 3));
+		return (write(1, "(nil)", 5));
 	a = 16;
 	str[a] = '\0';
 	while (value)
