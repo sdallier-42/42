@@ -6,7 +6,7 @@
 /*   By: sdallier <sdallier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/01 12:42:55 by sdallier          #+#    #+#             */
-/*   Updated: 2025/12/01 13:56:38 by sdallier         ###   ########.fr       */
+/*   Updated: 2025/12/01 15:36:31 by sdallier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,9 @@
 
 char	*get_next_line(int fd);
 size_t	ft_strlen(char *str);
-char	*ft_strjoin(char *s1, char *s2);
-char	*new_line(char *str);
-void	*ft_calloc(size_t count, size_t size);
+void	*ft_memcpy(void *dest, const void *src, size_t n);
+char	*ft_strdup(const char *src);
+char	*ft_strchr(const char *str, int c);
+char	*ft_substr(char *s, unsigned int start, size_t len);
 
 #endif
