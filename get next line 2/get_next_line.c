@@ -81,6 +81,7 @@ char	*ft_read(int fd, char *str)
 		if (bytes == -1)
 		{
 			free(buffer);
+			free(str);
 			return (NULL);
 		}
 		buffer[bytes] = '\0';
